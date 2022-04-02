@@ -1,6 +1,6 @@
 
 # Build Stage
-FROM aegooby/rust-fuzz:latest as builder
+FROM aegooby/rust-fuzz:latest AS builder
 
 ## Add source code to the build stage.
 ADD . /repo
