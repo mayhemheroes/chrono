@@ -1,0 +1,5 @@
+project: chrono
+target: chrono
+
+cmds:
+  - cmd: /fuzz_reader
