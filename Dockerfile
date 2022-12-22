@@ -5,7 +5,7 @@ FROM fuzzers/cargo-fuzz:0.11.0 AS builder
 ADD . /repo
 WORKDIR /repo
 
-RUN cd fuzz && ${HOME}/.cargo/bin/cargo fuzz build
+RUN cd fuzz && cargo fuzz build
 
 # Package Stage
 FROM ubuntu:20.04
